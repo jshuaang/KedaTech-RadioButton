@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+/* container */
+.container-wrapper {
+    width: 500px;
+    margin: auto;
+    padding: 20px;
+    height: 100%;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    color:#2c2828
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-wrapper h1 {
+    text-transform:  uppercase;
+    font-size: 30px;
+    text-align: center;
+    color: #9ddb8c;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* add radio */
+.add-radio {
+    margin: 40px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.add-radio label {
+    display:block;
+    font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.add-radio select {
+    width: 60%;
+    height: 30px;
+    border-radius: 10px;
+    border: 2px solid #9ddb8c;
+    color: rgb(77, 78, 78)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.add-radio select:focus {
+    border: 2px solid #638b57;
+    outline:none
+    
+}
+
+.add-radio button {
+    width: 30%;
+    margin: 20px;
+    height: 30px;
+    background-color: #9ddb8c;
+    cursor: pointer;
+    color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+}
+
+.add-radio button:hover {
+    background-color: #638b57;
+}
+
+.radio-container {
+    margin: 40px 0;
+}
+
+.input-user {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-user input[type='text']{
+    margin: 5px;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #9ddb8c;
+    padding: 0 10px;
+}
+
+.input-user input[type='text']:focus {
+    border: 2px solid #638b57;
+    outline: none;
+}
+
+.input-user-wrapper-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.input-user-wrapper-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.input-user-wrapper-exit {
+    opacity: 1;
+}
+
+.input-user-wrapper-exit-active {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.result-wrapper h2 {
+    text-align: center;
 }

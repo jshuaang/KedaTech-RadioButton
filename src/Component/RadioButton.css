@@ -1,0 +1,36 @@
+.radio-wrapper {
+    margin:10px;
+}
+
+.radio-wrapper label {
+    font-weight: 700;
+}
+
+.radio-wrapper input[type='radio'] {
+    margin-right: 20px;
+}
+
+.radio-wrapper input[type='text'], .radio-wrapper input[type='date'] {
+    width: 80%;
+    height: 25px;
+    border-radius: 10px;
+    border: 2px solid #9ddb8c;
+    padding: 0 10px;
+}
+
+.radio-wrapper input[type='text']:focus,
+.radio-wrapper input[type='date']:focus {
+    border: 2px solid #638b57;
+    outline: none;
+}
+
+.alert-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.alert-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all ease 2s;
+}
